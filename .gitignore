@@ -44,3 +44,6 @@ example
 
 # Next.js
 mc2-api/.next/
+
+# Sensitive database
+.env
