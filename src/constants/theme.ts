@@ -15,6 +15,7 @@ export const Colors = {
     backgroundSelected: "#E0E1E6",
     textSecondary: "#60646C",
     borderColor: "#000000",
+    progressBar: "#B3FDFF",
   },
   dark: {
     text: "#ffffff",
@@ -23,6 +24,7 @@ export const Colors = {
     backgroundSelected: "#2E3135",
     textSecondary: "#B0B4BA",
     borderColor: "#ffffff",
+    progressBar: "#B3FDFF",
   },
 } as const;
 
