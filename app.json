@@ -1,11 +1,11 @@
 {
   "expo": {
-    "name": "Jezcois Reuben Garganza",
-    "slug": "garganza-week2",
+    "name": "Garganza Tindahan Ledger",
+    "slug": "garganza-tindahan-ledger",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "garganzaapp",
+    "scheme": "garganzatindahanledger",
     "userInterfaceStyle": "automatic",
     "ios": {
       "icon": "./assets/expo.icon"
