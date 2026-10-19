@@ -16,8 +16,11 @@ import { ThemedView } from "@/components/themed-view";
 import { useCustomers } from "@/hooks/use-customers";
 import { useTheme } from "@/hooks/use-theme";
 
+import { useProfile } from "@/hooks/use-profile";
+
 export default function CustomersScreen() {
   const { status, customers, problem, retry } = useCustomers();
+  const profile = useProfile();
   const [query, setQuery] = useState("");
   const [adding, setAdding] = useState(false);
 
@@ -69,7 +72,9 @@ export default function CustomersScreen() {
 
       <ThemedText>Total owed: ₱ {total.toFixed(2)}</ThemedText>
 
-      <Button title="Add customer" onPress={() => setAdding(true)} />
+      {profile?.role === "admin" && (
+        <Button title="Add customer" onPress={() => setAdding(true)} />
+      )}
 
       <FlatList
         data={shown}
